@@ -1,4 +1,6 @@
-<?php namespace k98kurz\Pdf;
+<?php
+
+namespace azakur4\Pdf;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,8 +20,7 @@ class PdfServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['pdf'] = $this->app->share(function($app)
-		{
+		$this->app['pdf'] = $this->app->share(function ($app) {
 			return new Pdf;
 		});
 	}
