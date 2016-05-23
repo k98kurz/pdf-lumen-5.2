@@ -21,6 +21,15 @@ Now add the alias.
     class_alias('k98kurz\Pdf\PdfFacade', 'PDF');
 ```
 
+## Configuration
+
+Copy the default configuration file from the config folder of this project to your application root config folder `dompdf.php`
+
+Now open up `bootstrap/app.php` and add this line:
+
+```php
+   $app->configure('dompdf');
+```
 
 ## Usage
 
