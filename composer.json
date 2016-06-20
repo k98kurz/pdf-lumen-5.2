@@ -3,7 +3,7 @@
     "description": "compatibility fork of k98kurz/pdf-lumen (dompdf wrapper) for Laravel Lumen",
 	"keywords": ["pdf", "dompdf", "laravel", "lumen"],
     "license": "MIT",
-    "version": "1.2",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Jimmy Brian Anamaria Torres",
