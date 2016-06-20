@@ -18,5 +18,5 @@
             "azakur4\\Pdf": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
