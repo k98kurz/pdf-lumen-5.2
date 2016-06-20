@@ -1,15 +1,15 @@
 # Dompdf
 
-Compatibility conversion of Thujohn/Pdf for Laravel Lumen 5.*
+Compatibility conversion of k98kurz/pdf-lumen for Laravel Lumen 5.*
 Simple Dompdf wrapper package (uses Dompdf stable version 0.5)
 
-By: k98kurz/pdf-lumen
+By: Azakur4/lum-pdf
 
 ## Installation
 
-Add `azakur4/pdf-lumen` to `composer.json`.
+Add `azakur4/lum-pdf` to `composer.json`.
 ```
-"azakur4/pdf-lumen": "dev-master"
+"azakur4/lum-pdf": "dev-master"
 ```
 
 Run `composer update` to pull down the latest version of Pdf.
@@ -23,6 +23,15 @@ Now add the alias.
     class_alias('azakur4\Pdf\PdfFacade', 'PDF');
 ```
 
+## Configuration
+
+Copy the default configuration file from the config folder of this project to your application root config folder `dompdf.php`
+
+Now open up `bootstrap/app.php` and add this line:
+
+```php
+   $app->configure('dompdf');
+```
 
 ## Usage
 

@@ -1,5 +1,5 @@
 {
-    "name": "azakur4/pdf-lumen",
+    "name": "azakur4/lum-pdf",
     "description": "compatibility fork of k98kurz/pdf-lumen (dompdf wrapper) for Laravel Lumen",
 	"keywords": ["pdf", "dompdf", "laravel", "lumen"],
     "license": "MIT",

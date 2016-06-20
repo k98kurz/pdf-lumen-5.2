@@ -16,16 +16,16 @@ class Pdf {
 		$config = app()->make('config');
 
 		foreach ($_conf as $conf){
-			if (($config->has('dompdf.'.$conf) || $config->get('dompdf.'.$conf)) && !defined($conf))
-				define($conf, $config->get('dompdf.'.$conf));
+			if ((Config::has('dompdf.'.$conf) || Config::get('dompdf.'.$conf)) && !defined($conf))
+				define($conf, Config::get('dompdf.'.$conf));
 		}
 
 		require_once 'dompdf/dompdf_config.inc.php';
 
 		$this->dompdf = new \DOMPDF();
 
-		if ($config->has('dompdf.base_path')) {
-			$this->dompdf->set_base_path($config->get('dompdf.base_path'));
+		if (Config::has('dompdf.base_path')) {
+			$this->dompdf->set_base_path(Config::get('dompdf.base_path'));
 		}
 	}
 
