@@ -1,13 +1,13 @@
 {
-    "name": "k98kurz/pdf-lumen",
+    "name": "Azakur4/pdf-lumen",
     "description": "compatibility fork of Thujohn/pdf (dompdf wrapper) for Laravel Lumen",
 	"keywords": ["pdf", "dompdf", "laravel", "lumen"],
     "license": "MIT",
     "version": "1.0.7.3",
     "authors": [
         {
-            "name": "k98kurz",
-            "email": "k98kurz@gmail.com"
+            "name": "Azakur4",
+            "email": "captasfire@hotmail.com"
         }
     ],
     "require": {
