@@ -1,4 +1,4 @@
-<?php namespace k98kurz\Pdf;
+<?php namespace tibonilab\Pdf;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class PdfServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['pdf'] = $this->app->share(function($app)
+		$this->app->singleton('pdf', function($app)
 		{
 			return new Pdf;
 		});
